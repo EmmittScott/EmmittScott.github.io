@@ -59,12 +59,12 @@ h1.Home-Title{
 .gaming-picture-img{
     border: 10px solid black;
     width: 96%;
-    margin: 10px;
+    
 }
 .game_summary{
     background-color: #148c8c;
     border: 10px solid black;
-    margin: 10px;
+    margin: 15px;
     padding: 0 100px 0 100px;
     line-height: 90px;
     font-size: 30px;
