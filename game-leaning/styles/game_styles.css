@@ -22,13 +22,14 @@ nav a {
     text-decoration: none;
     padding: 30px;
     padding-top: 30px;
+    font-size: 30px;
 }
 nav a:hover{
     color: #148c8c;
 }
 
 img.logo{
-    width: 80px;
+    width: 200px;
     padding: 15px 15px;
     margin-top: 0px;
     
@@ -43,23 +44,57 @@ body{
     color: white;
 }
 
+.main-section{
+   display: grid;
+   grid-template-columns: 1fr 1fr; 
+}
+
 h1.Home-Title{
     font-family: 'Orbitron';
 }
-#gaming-picture-img{
-    text-align: left;
-    width: 50%;
+.design-pic{
+   width: 100%;
+    grid-row: 1/2;
+}
+.gaming-picture-img{
+    border: 10px solid black;
+    width: 96%;
+    margin: 10px;
+}
+.game_summary{
+    background-color: #148c8c;
+    border: 10px solid black;
+    margin: 10px;
+    padding: 0 100px 0 100px;
+    line-height: 90px;
+    font-size: 30px;
 }
 
-
-section.game_summary{
-    text-align: right;
+.engine-pic{
+    width: 100%;
+    grid-column: 2/3;
+}
+#game-design-img{
+    border: 10px solid black;
+    width: 96%;
+    margin: 10px;
 }
 
+h1.Engine-Title{
+    font-family: 'Orbitron';
+   
+}
 
-
-
-
+.engine_summary{
+    background-color: #148c8c;
+    border: 10px solid black;
+    margin: 10px;
+    padding: 0 100px 0 100px;
+    line-height: 90px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    font-size: 30px;
+}
 
 
 
@@ -82,6 +117,21 @@ footer a{
 footer a:hover{
     text-decoration: none;
     color: #148c8c;
+}
+.social{
+    text-align: right;
+}
+.fb{
+    width: 10%;
+    text-align: right;
+}
+.ig{
+    width: 10%;
+    text-align: right;
+}
+.twr{
+    width: 10%;
+    text-align: right;
 }
 footer{
     padding: 25px 50px;
