@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Orbitron&display=swap');
+
+header{
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #2c0434;
+    text-align: left; 
+    color: #e2df08;  
+    font-family: 'Orbitron';
+    padding: 0px 0px;
+    margin-top: 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a {
+    color: #e2df08;
+    text-decoration: none;
+    padding: 30px;
+    padding-top: 30px;
+}
+nav a:hover{
+    color: #148c8c;
+}
+
+img.logo{
+    width: 80px;
+    padding: 15px 15px;
+    margin-top: 0px;
+    
+}
+body{
+    text-align: center;
+    font-family: 'Exo 2';
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1586;
+    color: white;
+}
+
+h1.Home-Title{
+    font-family: 'Orbitron';
+}
+#gaming-picture-img{
+    text-align: left;
+    width: 50%;
+}
+
+
+section.game_summary{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+section.msg{
+    color: #e2df08;
+    background-color: #4c8577;
+}
+nav a.join{
+    text-decoration: none;
+    color: #e2df08;
+}
+
+    
+footer a{
+    text-decoration: none;
+    color: #e2df08;
+}
+footer a:hover{
+    text-decoration: none;
+    color: #148c8c;
+}
+footer{
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-align: left;
+    background-color: #2c0434;
+}
+
