@@ -43,7 +43,7 @@ body{
     background-color: #1f1586;
     color: white;
 }
-
+/**-- Home CSS --**/
 .main-section{
    display: grid;
    grid-template-columns: 1fr 1fr; 
@@ -53,39 +53,39 @@ h1.Home-Title{
     font-family: 'Orbitron';
 }
 .design-pic{
-   width: 100%;
+    width: 100%;
     grid-row: 1/2;
-    justify-content: center;
+    align-self: center;
 }
 .gaming-picture-img{
     border: 10px solid black;
     width: 96%;
-    
-    
 }
+
 .game_summary{
     background-color: #148c8c;
     border: 10px solid black;
     margin: 15px;
     padding: 0 100px 0 100px;
-    line-height: 90px;
+    line-height: 70px;
     font-size: 30px;
 }
 
 .engine-pic{
     width: 100%;
     grid-column: 2/3;
-    
+    align-self: center;
 }
+
 #game-design-img{
     border: 10px solid black;
     width: 96%;
     margin: 10px;
+    align-self: center;
 }
 
 h1.Engine-Title{
-    font-family: 'Orbitron';
-   
+    font-family: 'Orbitron'; 
 }
 
 .engine_summary{
@@ -93,16 +93,75 @@ h1.Engine-Title{
     border: 10px solid black;
     margin: 10px;
     padding: 0 100px 0 100px;
-    line-height: 90px;
+    line-height: 70px;
     grid-row: 2/3;
     grid-column: 1/2;
     font-size: 30px;
 }
+/**-- End Home CSS --**/
 
+/**-- Game Engine --**/
+.game_engine_main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.unity-pic{
+    margin: 50px;
+}
+.unity-img{
+    border: 10px solid white;
+    width: 63%;
+}
+h1.Unity-Title{
+    font-family: 'Orbitron';
+}
+.unity_information{
+    background-color: #148c8c;
+    border: 10px solid black;
+    margin: 10px;
+    padding: 0 100px 0 100px;
+    line-height: 70px;
+    font-size: 30px;
+}
+h3.unity_games{
+    text-align: left;
+    font-family: 'Orbitron';
+}
+.unity_list{
+    text-align: left;
+}
+.unreal-engine-pic{
+    margin: 50px;
+}
+.unreal-engine-img{
+    border: 10px solid white;
+    width: 63%;
+}
 
+h1.Unreal-Engine-Title{
+    font-family: 'Orbitron';
+}
 
+.unreal_engine_information{
+    background-color: #148c8c;
+    border: 10px solid black;
+    margin: 10px;
+    padding: 0 100px 0 100px;
+    line-height: 70px;
+    font-size: 30px;
+}
 
+h3.unreal_games{
+    font-family: 'Orbitron';
+    text-align: left;
+}
 
+.unreal_list{
+    text-align: left;
+}
+/**-- End 
+
+/**-- Footer CSS --**/
 section.msg{
     color: #e2df08;
     background-color: #4c8577;
