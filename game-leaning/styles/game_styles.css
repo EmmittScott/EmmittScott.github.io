@@ -62,10 +62,11 @@ div a{
     border: 5px solid rgb(255, 255, 255);
     color: white;
   }
-.container:hover .image {
-    opacity: 0.3;
+.container:hover .logo {
+    opacity: 0.6;
 }
 .container:hover .middle {
+    text-decoration: none;
     opacity: 1;
 }
 .text {
