@@ -7,11 +7,11 @@
     <title>Game Design Starting Points | Glass Shark Productions | Home</title>
     <link href="styles/game_styles.css" rel="stylesheet"/>
 </head>
-<body>
+<body onload="NextQuestion(0)">
     <div id="content">
         <header>
             <div class="container"> 
-                <img class="logo" src="images/game_logo.png" alt="Glass Shark Logo" class="image">
+                <img class="logo" src="images/game_logo.png" alt="Glass Shark Logo">
                 <div class="middle">
                     <div class="text">
                         <a href="contact.html">Contact Us</a>
@@ -25,16 +25,26 @@
             <a href="game_quiz.html">Quiz</a>
         </nav>
     </header>
-    </div>
+</div>
+<main class="quiz_main">
 
-    <!--Picture Needs Photoshop-->
-    <div id="thinking-pic">
-        <img id="thinking-img" src="images/thinking.png" alt="Thinking Person">
-    </div>
+<!--Picture Needs Photoshop-->
+<div id="thinking-pic">
+    <img id="thinking-img" src="images/thinking.png" alt="Thinking Person">
+</div>
 
     <section id="best-one">
         <h1 class="Best-option">What is the Best Option</h1>
-        <p>[Which to choose]</p>
+        <p>What would be the better option to choose? Well, both game 
+            engines are good options to choose from. Unity is a platform 
+            that can be easy to learn if you have little to no experience 
+            with game development. And Unity can really strive with medium 
+            to small games. Although Unreal Engine has some more features 
+            that help its performance. It also strives with bigger platform 
+            games along with smaller games as well. So, it really depends on 
+            what your skill level is or what you want to develop as a game 
+            developer! If you still don’t know you can take this little 
+            quiz to see which engine will be more suited for you! </p>
     </section>
 
     <div id="quiz-pic">
@@ -42,34 +52,106 @@
     </div>
 
     <!-- ##### QUIZ HTML CODE ##### -->
-        
-
-
-
-
-
-
-
-
+    
+            <!-- creating a modal for when quiz ends -->
+            <div class="modal-container" id="score-modal">
+    
+                <div class="modal-content-container">
+    
+                    <h1>Congratulations, Quiz Completed.</h1>
+    
+                    <div class="grade-details">
+                        <p>Attempts : 10</p>
+                        <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                        <p>Right Answers : <span id="right-answers"></span></p>
+                        <p>Grade : <span id="grade-percentage"></span>%</p>
+                        <p ><span id="remarks"></span></p>
+                    </div>
+    
+                    <div class="modal-button-container">
+                        <button onclick="closeScoreModal()">Continue</button>
+                    </div>
+    
+                </div>
+            </div>
+    <!-- end of modal of quiz details-->
+    
+            <div class="game-quiz-container">
+    
+                <div class="game-details-container">
+                    <h1>Score : <span id="player-score"></span> / 10</h1>
+                    <h1> Question : <span id="question-number"></span> / 10</h1>
+                </div>
+    
+                <div class="game-question-container">
+                    <h2 id="display-question"></h2>
+                </div>
+    
+                <div class="game-options-container">
+    
+                   <div class="modal-container" id="option-modal">
+    
+                        <div class="modal-content-container">
+                             <h1>Please Pick An Option</h1>
+    
+                             <div class="modal-button-container">
+                                <button onclick="closeOptionModal()">Continue</button>
+                            </div>
+    
+                        </div>
+    
+                   </div>
+    
+                    <span>
+                        <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                        <label for="option-one" class="option" id="option-one-label"></label>
+                    </span>
+    
+    
+                    <span>
+                        <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                        <label for="option-two" class="option" id="option-two-label"></label>
+                    </span>
+    
+    
+                    <span>
+                        <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                        <label for="option-three" class="option" id="option-three-label"></label>
+                    </span>
+    
+    
+                    <span>
+                        <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                        <label for="option-four" class="option" id="option-four-label"></label>
+                    </span>
+    
+    
+                </div>
+    
+                <div class="next-button-container">
+                    <button onclick="handleNextQuestion()">Next Question</button>
+                </div>
+    
+            </div>
+        </main>
+        <script src="quiz.js"></script>
+    
     <!-- ##### QUIZ HTML CODE ##### -->
-<footer>
-    <h3>Glass Shark &copy; 20XX - Emmitt Stevenson</h3>
-    <h3><a href="#">Site Plan</a></h3>
-    <h3><a href="#">Contact Us</a></h3>
-    <div class="social">
-        <!--Picture Needs Photoshop-->
-        <a href="https://facebook.com" target="_blank">
-            <img src="images/facebook_logo.png" alt="facebook icon">
-        </a>
-        <!--Picture Needs Photoshop-->
-        <a href="https://instagram.com" target="_blank">
-            <img src="images/instagram_logo.jpg" alt="facebook icon">
-        </a>
-        <!--Picture Needs Photoshop-->
-        <a href="https://twitter.com" target="_blank">
-            <img src="images/twitter_logo.jpg" alt="facebook icon">
-        </a>
-    </div>
+    <footer>
+        <h3>Glass Shark &copy; 20XX - Emmitt Stevenson</h3>
+        <h3><a href="site-plan.html">Site Plan</a></h3>
+        <h3><a href="#">Contact Us</a></h3>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img class ="fb" src="images/facebook_logo.png" alt="facebook icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img class="ig" src="images/instagram_logo.png" alt="facebook icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img class="twr" src="images/twitter_logo.png" alt="facebook icon">
+            </a>
+        </div>
 </footer>
 </body>
 </html>
