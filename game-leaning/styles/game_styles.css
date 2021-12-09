@@ -226,7 +226,7 @@ h3.unreal_games{
     display: grid;
    grid-template-columns: 1fr 1fr; 
 }
-h1.Best-option{
+h2.Best-option{
     font-family: 'Orbitron';
     color: #e2df08;
 }
