@@ -235,12 +235,25 @@ h1.Best-option{
     background-color: #148c8c;
     border: 10px solid black;
     margin: 10px;
-    padding: 0 100px 0 100px;
+    padding: 40px 100px 40px 100px;
     line-height: 70px;
     font-size: 30px;
+    grid-column: 2/2;
 }
 
-/*-- End Quiz CSS --*/
+#thinking-img{
+    border: 10px solid black;
+    width: 63%;
+    grid-column: 1/2;
+}
+
+#quiz-img{
+    border: 10px solid black;
+    width: 63%;
+    grid-column: 1/2;
+}
+
+/*-- End Quiz Page CSS --*/
 
 
 
@@ -250,9 +263,6 @@ h1.Best-option{
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
 main{
     width: 100%;
     min-height: 100vh;
@@ -264,18 +274,22 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
 }
 
 .game-quiz-container{
-    width: 40rem;
+    width: 72rem;
     height: 30rem;
-    background-color: #20148c;
+    background-color: #148c8c;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: 30px;
+    
     border: 5px solid black;
+    grid-column: 2/2;
 }
 
 .game-details-container{
@@ -284,6 +298,7 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: yellow;
 }
 
 .game-details-container h1{
@@ -369,7 +384,7 @@ input[type=radio]:checked ~ .option {
     outline: none;
 }
 .next-button-container button:hover{
-    background-color: #e2df08;
+    background-color: #5501a3;
     color: #148c8c;
 }
 
@@ -445,9 +460,8 @@ input[type=radio]:checked ~ .option {
 .modal-button-container button:hover{
     background-color: rgb(83, 82, 82);
 }
-
-
 /*-- End Quiz CSS --*/
+
 
 
 /*-- Contact Us CSS */
