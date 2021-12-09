@@ -465,9 +465,13 @@ input[type=radio]:checked ~ .option {
 
 
 /*-- Contact Us CSS */
+.contactus{
+    display: grid;
+    grid-template-columns: 1fr;
+}
 form {
     /* Center the form on the page */
-    margin: 83px auto;
+    margin: 85px auto;
     justify-content: center;
     width: 500px;
     /* Form outline */
